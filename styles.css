@@ -1,3 +1,8 @@
+
+.mobile-site {
+    display: hide;
+}
+
 body {
     font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -9,6 +14,10 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+}
+
+.mobile-site {
+    display: none;
 }
 
 .search img{
@@ -181,4 +190,83 @@ body {
 
 .part-row span{
     margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244,237,227);
+}
+
+.mobile-site {
+    background-color: rgb(74,21,74);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mtext {
+    text-align: center;
+}
+
+.h1yellow {
+    color: rgb(255,195,0);
+}
+
+.h1white {
+    color: rgb(245,244,245);
+}
+
+.mlink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mlink a {
+    padding: 15px 160px;
+    font-size: 18px;
+    background-color: rgb(245,244,245);
+    color: rgb(74,21,74);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+.mlink a:hover {
+    background-color: rgb(94, 27, 94);
+    color: rgb(245,244,245);
+}
+
+
+.mvideo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-width: 768px;
+    height: auto;
+}
+
+.m-img-container {
+    background-color: rgb(244,237,227);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 756px;
+}
+
+.m-img-container img {
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
 }
